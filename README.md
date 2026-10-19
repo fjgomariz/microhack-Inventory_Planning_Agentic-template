@@ -132,15 +132,15 @@ it has the longest support horizon (retires **2027-03-18**), and it runs on
 To complete this MicroHack you'll need:
 
 - A **GitHub account** (for Codespaces) **or** local **Python 3.11** + [uv](https://docs.astral.sh/uv/) + **Azure CLI**.
-- Access to the **Foundry project** and **Cosmos DB** your lab automation provisioned —
-  you'll get a `FoundryProjectEndpoint`, `ModelDeploymentName`, and `CosmosEndpoint` on
-  your dashboard.
+- Access to a provisioned **Foundry project** and **Cosmos DB**, or an Azure subscription
+  where you can create them by following the
+  [self-provisioning guide](docs/self-provisioning.md).
 - Comfort **reading and editing Python** (the reference implementation is provided).
 - That's it — no data setup (the app seeds Cosmos on first run), no other software.
 
 > [!TIP]
 > **You're ready to start when** you can open the repo in a Codespace, run `az login`,
-> and paste your three dashboard values into `src/.env`.
+> and paste your three dashboard or self-provisioning values into `src/.env`.
 
 ## Challenges
 

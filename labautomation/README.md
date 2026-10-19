@@ -65,7 +65,14 @@ described in the last row above. **The script handles this automatically — no 
 tagging or portal step is required.** A normal (non-MCAPS) lab subscription simply
 ignores the extra tag.
 
-## Local dry run
+## Self-provisioning outside the MicroHack platform
+
+Participants deploying into their own Azure subscription should follow the complete
+[self-provisioning guide](../docs/self-provisioning.md). It covers prerequisites,
+Codespace authentication, provider registration, deployment, application configuration,
+verification, troubleshooting, and cleanup.
+
+### Local wrapper details
 
 The platform injects helpers such as `Get-MhhStableHash` and pre-creates the resource
 group, so `deploy-lab.ps1` **cannot** be run directly outside the platform — it will
@@ -82,4 +89,3 @@ user id:
 
 > `run-local.ps1` is a **local-only helper** (not used by the platform). It mirrors
 > the `resourcegroup` deployment path.
-

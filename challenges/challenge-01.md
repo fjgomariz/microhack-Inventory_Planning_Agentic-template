@@ -30,13 +30,19 @@ app seeds it into Cosmos on first run, with nothing extra to set up.
 2. Wait for the container to build — it installs dependencies with `uv` and seeds
    `src/.env` automatically (see `.devcontainer/post-create.sh`).
 
+> [!IMPORTANT]
+> If your facilitator did not provide a lab environment, complete the
+> [self-provisioning guide](../docs/self-provisioning.md) now. It deploys the same
+> resources and returns the values used in Part B.
+
 ### Part B — Connect to your Foundry project (10 min)
 
 1. In the Codespace terminal, sign in:
    ```bash
    az login --use-device-code
    ```
-2. Open `src/.env` and paste the three values from your **lab dashboard**:
+2. Open `src/.env` and paste the three values from your **lab dashboard** or
+   self-provisioning output:
    ```
    PROJECT_ENDPOINT=<FoundryProjectEndpoint>
    MODEL_DEPLOYMENT_NAME=<ModelDeploymentName>   # gpt-5.4-mini

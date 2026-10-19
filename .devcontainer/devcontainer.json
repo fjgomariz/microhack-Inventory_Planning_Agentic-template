@@ -4,7 +4,11 @@
   "features": {
     "ghcr.io/devcontainers/features/azure-cli:1": {},
     "ghcr.io/azure/azure-dev/azd:latest": {},
-    "ghcr.io/devcontainers/features/github-cli:1": {}
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers/features/powershell:2": {
+      "version": "latest",
+      "modules": "Az.Accounts,Az.Resources,Az.Identity"
+    }
   },
   "forwardPorts": [8000],
   "portsAttributes": {
